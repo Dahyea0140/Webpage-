@@ -6,7 +6,7 @@
 
 body{
     font-size: 16px;
-    min-height: 100vh;
+    height: 100%;
     max-width: auto;
     margin: 0;
     
@@ -32,33 +32,34 @@ h2{
 }
 
 
-.container {
-    display: flex;
-    justify-content: space-between;
+.series_details {
+    padding: 1rem;
 }
 
-.series_details{
-    width: 50vw;
-    height: 25vw;
-    padding: 0.5rem 0.5rem;
-    border: 1px solid black;
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
-    display: flow-root;
+.series_summary {
+    width: 180px;
+    height: auto;
+    float: left;
+    margin-right: 1rem;
 }
 
-.top_cast_heading{
-    text-align: right;
-    padding-right: 1em;
-    font-weight: bold;
+.cast_member {
+    margin-bottom: 1rem;
 }
 
-
-.cast_member{
-    width: 250px;
-    display: flow-root;
-    padding: 5px;
+.cast_member_1 {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 10px;
 }
+
+.cast_name {
+    margin-right: 10px;
+    font-weight: 600;
+}
+
 
 /*desinging the profile pic of every cast member */
 .cast_member_1 {
@@ -98,3 +99,33 @@ h2{
     font-size: large;
 }
 
+@media (min-width : 475px) {
+    .container {
+        max-width: 475px;
+    }
+}
+@media (min-width : 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+@media (min-width : 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+@media (min-width : 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+@media (min-width : 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+@media (min-width : 1535px) {
+    .container {
+        max-width: 1536px;
+    }
+}
